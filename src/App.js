@@ -2,13 +2,13 @@ import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import HomePage from './pages/HomePage';
-import ProjectListPage from './pages/ProjectListPage';
 import ProjectDetailsPage from './pages/ProjectDetailsPage';
 
 import SignupPage from './pages/SignupPage';
 import LoginPage from './pages/LoginPage';
 import PrivateRoute from './components/PrivateRoute'; 
 import AnonRoute from './components/AnonRoute'; 
+import ProductListPage from './pages/ProductListPage';
 
 function App() {
 	return (
@@ -19,10 +19,10 @@ function App() {
 				<Route exact path="/" component={HomePage} />
 				<Route
 					exact
-					path="/projects"
+					path="/products"
 					element={
 						<PrivateRoute>
-							<ProjectListPage />
+							<ProductListPage />
 						</PrivateRoute>
 					}
 				/>
