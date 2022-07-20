@@ -29,7 +29,7 @@ function ProductListPage() {
 	return (
 		<div className="ProjectListPage">
 			{/* <AddProject refreshProjects={getAllProjects} /> */}
-<h1>HOLA PERR****</h1>
+<h1>HOLA PERRAAA</h1>
 			{loading && <div>Loading...</div>}
 			 { !loading && products?.map((product) => <ProductCard key={product._id} {...product} />  )}  
 		</div>

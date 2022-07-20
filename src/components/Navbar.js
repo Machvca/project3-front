@@ -1,6 +1,11 @@
 import { Link } from "react-router-dom";
 import { useContext } from "react";                       // <== IMPORT 
 import { AuthContext } from "./../context/auth.context";  // <== IMPORT
+import Nav from 'react-bootstrap/Nav';
+
+
+
+
 
 function Navbar() {
   // Subscribe to the AuthContext to gain access to
@@ -8,26 +13,34 @@ function Navbar() {
   const { isLoggedIn, user, logOutUser } = useContext(AuthContext);
 
   return (
-    <nav>
+    
+      
+      <Nav className="justify-content-end" activeKey="/home">
       <Link to="/">
-        <button>Home</button>
+        <button class="btn btn-sm btn-outline-secondary" type="button">Home</button>
       </Link>
 -
       {isLoggedIn
         ? (<>
-            <Link to="/projects">
-              <button>Projects</button>
+       
+            <Link to="/products">
+              <button class="btn btn-sm btn-outline-secondary" type="button">Products</button>
             </Link>
-            <button onClick={logOutUser}>Logout</button>
+            <button class="btn btn-sm btn-outline-secondary" type="button" onClick={logOutUser}>Log out</button>
             <span>{user.name}</span>
+            
           </>)
+        
         : 
         (<>
-          <Link to="/signup"> <button>Signup</button> </Link>
-          <Link to="/login"> <button>Login</button> </Link>
+       
+          <Link to="/signup"> <button class="btn btn-sm btn-outline-secondary" type="button">Signup</button> </Link>
+          <Link to="/login"> <button class="btn btn-sm btn-outline-secondary" type="button">Login</button> </Link>
+          
         </>)
       }
-    </nav>
+
+    </Nav>
   );
 }
 
