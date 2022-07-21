@@ -10,8 +10,10 @@ import PrivateRoute from './components/PrivateRoute';
 import AnonRoute from './components/AnonRoute'; 
 import ProductListPage from './pages/ProductListPage';
 import FilteredProductsPage from './pages/Filterproductspage.jsx'
-import MonitorsPage from './pages/monitorsPage';
+import MonitorsPage from './pages/MonitorsPage';
 import MousesPage from './pages/MousesPage';
+import ChairsPage from './pages/ChairsPage';
+import MerchPage from './pages/MerchPage';
 
 function App() {
 	return (
@@ -35,7 +37,7 @@ function App() {
 				/>
 
 
-<Route
+			<Route
 					exact
 					path="/products/monitors"
 					element={
@@ -46,12 +48,46 @@ function App() {
 					}
 				/>
 
-<Route
+			<Route
 					exact
 					path="/products/mouses"
 					element={
 						<PrivateRoute>
 						<MousesPage />
+							
+						</PrivateRoute>
+					}
+				/>
+
+			<Route
+					exact
+					path="/products/keyboards"
+					element={
+						<PrivateRoute>
+						<KeyboardsPage />
+							
+						</PrivateRoute>
+					}
+				/>
+			
+
+			<Route
+					exact
+					path="/products/chairs"
+					element={
+						<PrivateRoute>
+						<ChairsPage />
+							
+						</PrivateRoute>
+					}
+				/>
+			
+			<Route
+					exact
+					path="/products/merchandising"
+					element={
+						<PrivateRoute>
+						<MerchPage />
 							
 						</PrivateRoute>
 					}

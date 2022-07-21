@@ -9,10 +9,26 @@ const getAllProductsService = () => {
 const getAllMonitorsService = () => {
 	return service.get(`${URL}/monitors`)};
 
-
-	const getAllMousesService = () => {
+const getAllMousesService = () => {
 	return service.get(`${URL}/mouses`)};
 
+const getAllKeyboardsService = () => {
+	return service.get(`${URL}/keyboards`)};
+
+const getAllChairsService = () => {
+	return service.get(`${URL}/chairs`)};
+
+const getAllMerchService = () => {
+	return service.get(`${URL}/merchandising`)};
+
+const getAllSnacksService = () => {
+	return service.get(`${URL}/snacks`)};
+
+const getAllAccessoriesService = () => {
+	return service.get(`${URL}/accessories`)};
+
+const getAllHeadphonesService = () => {
+	return service.get(`${URL}/headphones`)};
 
 
 
@@ -20,8 +36,7 @@ const getAllMonitorsService = () => {
 
 
 
-
-export { getAllProductsService,  getAllMonitorsService, getAllMousesService}
+export { getAllProductsService,  getAllMonitorsService, getAllMousesService, getAllKeyboardsService, getAllChairsService, getAllMerchService }
 
 
 

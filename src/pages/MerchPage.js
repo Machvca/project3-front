@@ -1,18 +1,18 @@
 import { useState, useEffect } from 'react';
 import ProductCard from '../components/ProductCard';
-import { getAllMonitorsService } from '../services/product.services';
+import { getAllMerchService } from '../services/product.services';
 
-function MonitorsPage() {
+function MerchPage() {
  
 
-	const [ monitors, setMonitors ] = useState([]);
+	const [ merchandising, setMerch ] = useState([]);
 	const [ loading, setLoading ] = useState(true);
 
-	const getAllMonitors = async () => {
+	const getAllMerch = async () => {
 		// Send the token through the request "Authorization" Headers
 		try {
-			const response = await getAllMonitorsService();
-			setMonitors(response.data);
+			const response = await getAllMerchService();
+			setMerch(response.data);
 			console.log(response.data);
 			setLoading(false);
 		} catch (err) {
@@ -23,26 +23,19 @@ function MonitorsPage() {
 	// We set this effect will run only once, after the initial render
 	// by setting the empty dependency array - []
 	useEffect(() => {
-		getAllMonitors();
+		getAllMerch();
 	}, []);
 
 	return (
-		<div className="MonitorsListPage">
+		<div className="MerchListPage">
 			{/* <AddProject refreshProjects={getAllProjects} /> */}
 
 			{loading && <div>Loading...</div>}
-			 { !loading && monitors?.map((monitor) => <ProductCard key={monitor._id} {...monitor} />  )}  
+			 { !loading && merchandising?.map((merch) => <ProductCard key={merch._id} {...merch} />  )}  
 		</div>
 	);
 }
 
 
 
-export default MonitorsPage;
-
-
-
-
-
-
-
+export default MerchPage;

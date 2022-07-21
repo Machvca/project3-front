@@ -1,18 +1,18 @@
 import { useState, useEffect } from 'react';
 import ProductCard from '../components/ProductCard';
-import { getAllMonitorsService } from '../services/product.services';
+import { getAllKeyboardsService } from '../services/product.services';
 
-function MonitorsPage() {
+function KeyboardsPage() {
  
 
-	const [ monitors, setMonitors ] = useState([]);
+	const [ keyboards, setKeyboards ] = useState([]);
 	const [ loading, setLoading ] = useState(true);
 
-	const getAllMonitors = async () => {
+	const getAllKeyboards= async () => {
 		// Send the token through the request "Authorization" Headers
 		try {
-			const response = await getAllMonitorsService();
-			setMonitors(response.data);
+			const response = await getAllKeyboardsService();
+			setKeyboards(response.data);
 			console.log(response.data);
 			setLoading(false);
 		} catch (err) {
@@ -23,26 +23,19 @@ function MonitorsPage() {
 	// We set this effect will run only once, after the initial render
 	// by setting the empty dependency array - []
 	useEffect(() => {
-		getAllMonitors();
+		getAllKeyboards();
 	}, []);
 
 	return (
-		<div className="MonitorsListPage">
+		<div className="KeyboardsListPage">
 			{/* <AddProject refreshProjects={getAllProjects} /> */}
 
 			{loading && <div>Loading...</div>}
-			 { !loading && monitors?.map((monitor) => <ProductCard key={monitor._id} {...monitor} />  )}  
+			 { !loading && keyboards?.map((keyboard) => <ProductCard key={keyboard._id} {...keyboard} />  )}  
 		</div>
 	);
 }
 
 
 
-export default MonitorsPage;
-
-
-
-
-
-
-
+export default KeyboardsPage;

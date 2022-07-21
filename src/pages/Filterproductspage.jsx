@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import MonitorsPage from "./monitorsPage";
+import MonitorsPage from "./MonitorsPage";
 
 
 
