@@ -1,6 +1,8 @@
 body {
   margin: 0;
-  background-color: lightgrey;
+ background: rgb(0,255,189);
+background: linear-gradient(67deg, rgba(0,255,189,1) 0%, rgba(0,122,91,1) 51%, rgba(0,0,0,1) 100%);
+color: white;
 }
 
 a {
@@ -47,13 +49,17 @@ nav li {
 }
 
 .card {
+  display: flex;
+  justify-content: center;
+
+  flex-shrink: 3;
   width: 400px;
   padding: 10px;
-  box-shadow: 0px 2px 3px grey;
+  box-shadow: 0px 20px 3px lightcyan;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   background: #94a7c8;
-  border-radius: 4px;
+  border-radius: 14px;
 }
 
 .ProjectCard h3::after {
@@ -111,7 +117,7 @@ nav li {
 
 .cards{
 display: flex;
-background-color: lightgray;
+background-color: lightseagreen;
 
 }
 
@@ -126,11 +132,25 @@ align-items: flex-start;
 
 }
 
-.container{
+.containerr{
 display: grid;
 align-items: center;
  grid-template-columns: 70px 70px 70px;
   grid-gap: 400px;
+  margin-top: 150px;
+  margin-left: 200px;
+
+
+}
+
+
+.logohome{
+  height: 200px;
+  width: 200px;
+}
+
+.imagenpri{
+margin-top: 150px;
 
 
 }

@@ -27,12 +27,21 @@ function MonitorsPage() {
 	}, []);
 
 	return (
-		<div className="MonitorsListPage">
-			{/* <AddProject refreshProjects={getAllProjects} /> */}
 
+
+
+
+
+		<div className="container d-flex justify-content-center align-items-center h-100 bg-info ">
+			<div className="row">
+<div className="col-md-4">
 			{loading && <div>Loading...</div>}
 			 { !loading && monitors?.map((monitor) => <ProductCard key={monitor._id} {...monitor} />  )}  
 		</div>
+</div>
+</div>
+
+
 	);
 }
 

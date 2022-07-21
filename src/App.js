@@ -3,7 +3,6 @@ import { Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import HomePage from './pages/HomePage';
 import ProjectDetailsPage from './pages/ProjectDetailsPage';
-
 import SignupPage from './pages/SignupPage';
 import LoginPage from './pages/LoginPage';
 import PrivateRoute from './components/PrivateRoute'; 
@@ -22,20 +21,21 @@ import HeadphonesPage from './pages/HeadphonesPage';
 function App() {
 	return (
 		<div className="App">
-			<Navbar />
+
+		
+<Navbar />
 
 
-<HomePage />
 
 			<Routes>
-				<Route exact path="/" component={HomePage} />
+				<Route exact path="/" element={<HomePage />} />
+
 				<Route
 					exact
 					path="/products"
 					element={
 						<PrivateRoute>
 						<FilteredProductsPage />
-							
 						</PrivateRoute>
 					}
 				/>
@@ -46,8 +46,7 @@ function App() {
 					path="/products/monitors"
 					element={
 						<PrivateRoute>
-						<MonitorsPage />
-							
+						<MonitorsPage />	
 						</PrivateRoute>
 					}
 				/>
@@ -91,8 +90,7 @@ function App() {
 					path="/products/merchandising"
 					element={
 						<PrivateRoute>
-						<MerchPage />
-							
+						<MerchPage />							
 						</PrivateRoute>
 					}
 				/>
@@ -102,8 +100,7 @@ function App() {
 					path="/products/snacks"
 					element={
 						<PrivateRoute>
-						<SnacksPage />
-							
+						<SnacksPage />							
 						</PrivateRoute>
 					}
 				/>
@@ -113,8 +110,7 @@ function App() {
 					path="/products/mouses"
 					element={
 						<PrivateRoute>
-						<MousesPage />
-							
+						<MousesPage />							
 						</PrivateRoute>
 					}
 				/>
@@ -125,9 +121,7 @@ function App() {
 					path="/products/accesories"
 					element={
 						<PrivateRoute>
-
-						<AccesoriesPage />
-							
+						<AccesoriesPage />							
 						</PrivateRoute>
 					}
 				/>
@@ -137,8 +131,7 @@ function App() {
 					path="/products/headphones"
 					element={
 						<PrivateRoute>
-						<HeadphonesPage />
-							
+						<HeadphonesPage />							
 						</PrivateRoute>
 					}
 				/>
@@ -162,6 +155,7 @@ function App() {
 						</AnonRoute>
 					}
 				/>
+
 				<Route
 					exact
 					path="/login"

@@ -1,16 +1,15 @@
 import { Link } from "react-router-dom";
-import MonitorsPage from "./MonitorsPage";
+
 
 
 
 
 function FilteredProductsPage() {
   return (
-    <div className="container">
+    <div className="containerr">
       <a class="location-title" href="/products/monitors">
         {" "}
         MONITORS
-     
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="16"

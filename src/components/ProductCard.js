@@ -8,28 +8,20 @@ function ProductCard({ name, type, image, color,price, description,link }) {
 	return (
 
 
+<div className='card text-center bg-dark '>
+<img src={image} alt="img" />
+<div className='card-body'>
 
-<Card className='cards' style={{ width: '30rem' }} >
-   <Card.Img variant="top" src={image} alt="img" />
-      <Card.Body>
- <Card.Title>{name}</Card.Title>
-   <Card.Text>
-          {description}
-        </Card.Text>
-      </Card.Body>
- <ListGroup className="list-group-flush">
-        <ListGroup.Item>TYPE: {type}</ListGroup.Item>
-        <ListGroup.Item>AVAILABLE COLORS: {color}</ListGroup.Item>
-        <ListGroup.Item>BEST PRICE: {price}€</ListGroup.Item>
-      </ListGroup>
-
-	     <Card.Body>
-       
-        <Button variant="outline-secondary" href={link}>BUY ME HERE!!</Button>
-      </Card.Body>
+<h4 className='card-title'> {name}</h4>
+<p className='card-text text-secondary'> {description}</p>
+<p className='card-text text-secondary'>TYPE: {type}</p>
+<p className='card-text text-secondary'> AVAILABLE COLORS: {color}</p>
+<p className='card-text text-secondary'>BEST PRICE: {price}€</p>
+ <a href={link} className="btn btn-outline-secondary ">BUY ME HERE!!</a>
 
 
-</Card>
+</div>
+</div>
 
 
 

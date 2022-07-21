@@ -45,8 +45,9 @@ width: 200px;
 
 }
 
-/* .imagenpri{
-background-image: url("../public/images/fondoshopping.webp");
+.imagenpri{
 
+height: 100%;
+width: 650 px;
 
-} */
+} 

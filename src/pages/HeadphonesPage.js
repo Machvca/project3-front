@@ -28,7 +28,7 @@ function HeadphonesPage() {
 
 	return (
 		<div className="HeadphonesListPage">
-			{/* <AddProject refreshProjects={getAllProjects} /> */}
+			
 
 			{loading && <div>Loading...</div>}
 			 { !loading && headphones?.map((headphone) => <ProductCard key={headphone._id} {...headphone} />  )}  
