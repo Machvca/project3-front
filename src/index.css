@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: lightgoldenrodyellow;
 }
 
 a {
@@ -121,6 +122,15 @@ width: 45px;
 display: flex;
 align-content: flex-start;
 align-items: flex-start;
+
+
+}
+
+.container{
+display: grid;
+align-items: center;
+ grid-template-columns: 70px 70px 70px;
+  grid-gap: 400px;
 
 
 }
