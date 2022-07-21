@@ -1,7 +1,7 @@
 function HomePage() {
   return (
-    <div>
-      <h1>lorem ipsum
+    <div className="imagenpri">
+      <h1>lorem ipsummmm
       </h1>
     </div>
   );
