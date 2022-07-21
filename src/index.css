@@ -113,3 +113,14 @@ display: flex;
 background-color: lightgray;
 
 }
+
+
+.logo{
+height: 45px;
+width: 45px;
+display: flex;
+align-content: flex-start;
+align-items: flex-start;
+
+
+}

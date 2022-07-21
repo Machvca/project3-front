@@ -16,9 +16,13 @@ function Navbar() {
     
       
       <Nav className="justify-content-end" activeKey="/home">
-      <Link to="/">
-        <button class="btn btn-sm btn-outline-secondary" type="button">Home</button>
-      </Link>
+
+  <li className="nav-itemm">
+                <a title="logo" href="/"><img className="logo" src="../images/pr3.png" alt="logo" /></a>
+                </li>
+
+
+    
 -
       {isLoggedIn
         ? (<>

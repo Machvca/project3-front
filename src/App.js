@@ -19,7 +19,7 @@ function App() {
 				<Route exact path="/" component={HomePage} />
 				<Route
 					exact
-					path="/products"
+					path="/allproducts"
 					element={
 						<PrivateRoute>
 							<ProductListPage />
