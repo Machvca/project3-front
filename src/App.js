@@ -14,6 +14,7 @@ import MonitorsPage from './pages/MonitorsPage';
 import MousesPage from './pages/MousesPage';
 import ChairsPage from './pages/ChairsPage';
 import MerchPage from './pages/MerchPage';
+import SnacksPage from './pages/SnacksPage';
 
 function App() {
 	return (
@@ -93,6 +94,16 @@ function App() {
 					}
 				/>
 
+			<Route
+					exact
+					path="/products/snacks"
+					element={
+						<PrivateRoute>
+						<SnacksPage />
+							
+						</PrivateRoute>
+					}
+				/>
 
 
 

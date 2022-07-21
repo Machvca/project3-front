@@ -36,7 +36,7 @@ const getAllHeadphonesService = () => {
 
 
 
-export { getAllProductsService,  getAllMonitorsService, getAllMousesService, getAllKeyboardsService, getAllChairsService, getAllMerchService }
+export { getAllProductsService,  getAllMonitorsService, getAllMousesService, getAllKeyboardsService, getAllChairsService, getAllMerchService, getAllSnacksService }
 
 
 
