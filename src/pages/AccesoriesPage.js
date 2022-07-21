@@ -1,18 +1,18 @@
 import { useState, useEffect } from 'react';
 import ProductCard from '../components/ProductCard';
-import { getAllSnacksService } from '../services/product.services';
+import { getAllAccesoriesService } from '../services/product.services';
 
-function SnacksPage() {
+function AccesoriesPage() {
  
 
-	const [ snacks, setSnacks ] = useState([]);
+	const [ accesories, setAccesories ] = useState([]);
 	const [ loading, setLoading ] = useState(true);
 
-	const getAllSnacks = async () => {
+	const getAllAccesories= async () => {
 		// Send the token through the request "Authorization" Headers
 		try {
-			const response = await getAllSnacksService();
-			setSnacks(response.data);
+			const response = await getAllAccesoriesService();
+			setAccesories(response.data);
 			console.log(response.data);
 			setLoading(false);
 		} catch (err) {
@@ -23,19 +23,19 @@ function SnacksPage() {
 	// We set this effect will run only once, after the initial render
 	// by setting the empty dependency array - []
 	useEffect(() => {
-		getAllSnacks();
+		getAllAccesories();
 	}, []);
 
 	return (
-		<div className="SnacksListPage">
+		<div className="AccesoriesListPage">
 			{/* <AddProject refreshProjects={getAllProjects} /> */}
 
 			{loading && <div>Loading...</div>}
-			 { !loading && snacks?.map((snack) => <ProductCard key={snack._id} {...snack} />  )}  
+			 { !loading && accesories?.map((accesorie) => <ProductCard key={accesorie._id} {...accesorie} />  )}  
 		</div>
 	);
 }
 
 
 
-export default SnacksPage;
+export default AccesoriesPage;

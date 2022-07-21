@@ -8,13 +8,16 @@ import SignupPage from './pages/SignupPage';
 import LoginPage from './pages/LoginPage';
 import PrivateRoute from './components/PrivateRoute'; 
 import AnonRoute from './components/AnonRoute'; 
-import ProductListPage from './pages/ProductListPage';
 import FilteredProductsPage from './pages/Filterproductspage.jsx'
 import MonitorsPage from './pages/MonitorsPage';
 import MousesPage from './pages/MousesPage';
 import ChairsPage from './pages/ChairsPage';
 import MerchPage from './pages/MerchPage';
 import SnacksPage from './pages/SnacksPage';
+import KeyboardsPage from './pages/KeyboardsPage';
+import AccesoriesPage from './pages/AccesoriesPage';
+import HeadphonesPage from './pages/HeadphonesPage';
+
 
 function App() {
 	return (
@@ -105,8 +108,40 @@ function App() {
 					}
 				/>
 
+<Route
+					exact
+					path="/products/mouses"
+					element={
+						<PrivateRoute>
+						<MousesPage />
+							
+						</PrivateRoute>
+					}
+				/>
 
 
+				<Route
+					exact
+					path="/products/accesories"
+					element={
+						<PrivateRoute>
+
+						<AccesoriesPage />
+							
+						</PrivateRoute>
+					}
+				/>
+
+<Route
+					exact
+					path="/products/headphones"
+					element={
+						<PrivateRoute>
+						<HeadphonesPage />
+							
+						</PrivateRoute>
+					}
+				/>
 
 				<Route
 					exact

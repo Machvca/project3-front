@@ -24,8 +24,8 @@ const getAllMerchService = () => {
 const getAllSnacksService = () => {
 	return service.get(`${URL}/snacks`)};
 
-const getAllAccessoriesService = () => {
-	return service.get(`${URL}/accessories`)};
+const getAllAccesoriesService = () => {
+	return service.get(`${URL}/accesories`)};
 
 const getAllHeadphonesService = () => {
 	return service.get(`${URL}/headphones`)};
@@ -36,7 +36,7 @@ const getAllHeadphonesService = () => {
 
 
 
-export { getAllProductsService,  getAllMonitorsService, getAllMousesService, getAllKeyboardsService, getAllChairsService, getAllMerchService, getAllSnacksService }
+export { getAllProductsService,  getAllMonitorsService, getAllMousesService, getAllKeyboardsService, getAllChairsService, getAllMerchService, getAllSnacksService, getAllAccesoriesService, getAllHeadphonesService }
 
 
 

@@ -1,18 +1,18 @@
 import { useState, useEffect } from 'react';
 import ProductCard from '../components/ProductCard';
-import { getAllSnacksService } from '../services/product.services';
+import { getAllHeadphonesService } from '../services/product.services';
 
-function SnacksPage() {
+function HeadphonesPage() {
  
 
-	const [ snacks, setSnacks ] = useState([]);
+	const [ headphones, setHeadphones ] = useState([]);
 	const [ loading, setLoading ] = useState(true);
 
-	const getAllSnacks = async () => {
+	const getAllHeadphones= async () => {
 		// Send the token through the request "Authorization" Headers
 		try {
-			const response = await getAllSnacksService();
-			setSnacks(response.data);
+			const response = await getAllHeadphonesService();
+			setHeadphones(response.data);
 			console.log(response.data);
 			setLoading(false);
 		} catch (err) {
@@ -23,19 +23,19 @@ function SnacksPage() {
 	// We set this effect will run only once, after the initial render
 	// by setting the empty dependency array - []
 	useEffect(() => {
-		getAllSnacks();
+		getAllHeadphones();
 	}, []);
 
 	return (
-		<div className="SnacksListPage">
+		<div className="HeadphonesListPage">
 			{/* <AddProject refreshProjects={getAllProjects} /> */}
 
 			{loading && <div>Loading...</div>}
-			 { !loading && snacks?.map((snack) => <ProductCard key={snack._id} {...snack} />  )}  
+			 { !loading && headphones?.map((headphone) => <ProductCard key={headphone._id} {...headphone} />  )}  
 		</div>
 	);
 }
 
 
 
-export default SnacksPage;
+export default HeadphonesPage;
