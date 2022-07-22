@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useContext } from "react";                       // <== IMPORT 
 import { AuthContext } from "./../context/auth.context";  // <== IMPORT
 import Nav from 'react-bootstrap/Nav';
-
+import logo from '../images/pr3.png'
 
 
 
@@ -18,7 +18,7 @@ function Navbar() {
       <Nav className="justify-content-end" activeKey="/home">
 
   <li className="nav-itemm">
-                <a title="logo" href="/"><img className="logo" src="../images/pr3.png" alt="logo" /></a>
+                <a title="logo" href="/"><img className="logo" src={logo} alt="logo" /></a>
                 </li>
 
 

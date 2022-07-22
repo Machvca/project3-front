@@ -27,7 +27,7 @@ function MousesPage() {
 	}, []);
 
 	return (
-		<div className="MousesListPage">
+		<div className="maindiv">
 			{/* <AddProject refreshProjects={getAllProjects} /> */}
 
 			{loading && <div>Loading...</div>}

@@ -1,10 +1,13 @@
+import logo from '../images/pr3.png'
+
+
 function HomePage() {
   return (
     <div className="imagenpri">
       <h1> 
       DEVSTUFF
       </h1>
-     <img className="logohome" src="../images/pr3.png" alt="logo"/>
+     <img className="logohome" src={logo} alt="logo"/>
       <br></br>
       <br></br>
       <br></br>

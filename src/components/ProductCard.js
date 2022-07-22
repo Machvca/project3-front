@@ -8,35 +8,39 @@ function ProductCard({ name, type, image, color,price, description,link }) {
 	return (
 
 
-<section className='card-list'>
-<div className='card-body'>
+<div className='card-container'>
+
+<div className='image-container'>
 
 <img src={image} alt="img" />
-<h4 className='card-title'> {name}</h4>
-<p className='card-text text-secondary'> {description}</p>
-<p className='card-text text-secondary'>TYPE: {type}</p>
-<p className='card-text text-secondary'> AVAILABLE COLORS: {color}</p>
-<p className='card-text text-secondary'>BEST PRICE: {price}€</p>
+</div>
+<div className='card-content'>
+<div className='card-title'>
+<h4 > {name}</h4>
+</div>
+<div className='body-des'>
+<p > {description}</p>
+</div>
+
+<div className='body-type'>
+<p >TYPE: {type}</p>
+</div>
+<div className='body-color'>
+<p > AVAILABLE COLORS: {color}</p>
+</div>
+<div className='body-price'>
+<p >BEST PRICE: {price}€</p>
+</div>
+
+</div>
+
+
+<button>
  <a href={link} className="btn btn-outline-secondary ">BUY ME HERE!!</a>
+ </button>
 
 
 </div>
-</section>
-
-
-
-
-
-
-
-
-
-		
-
-
-
-
-
 
 
 
