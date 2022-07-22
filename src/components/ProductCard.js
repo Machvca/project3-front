@@ -8,10 +8,10 @@ function ProductCard({ name, type, image, color,price, description,link }) {
 	return (
 
 
-<div className='card text-center bg-dark '>
-<img src={image} alt="img" />
+<section className='card-list'>
 <div className='card-body'>
 
+<img src={image} alt="img" />
 <h4 className='card-title'> {name}</h4>
 <p className='card-text text-secondary'> {description}</p>
 <p className='card-text text-secondary'>TYPE: {type}</p>
@@ -21,7 +21,7 @@ function ProductCard({ name, type, image, color,price, description,link }) {
 
 
 </div>
-</div>
+</section>
 
 
 

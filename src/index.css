@@ -1,8 +1,10 @@
 body {
-  margin: 0;
- background: rgb(0,255,189);
-background: linear-gradient(67deg, rgba(0,255,189,1) 0%, rgba(0,122,91,1) 51%, rgba(0,0,0,1) 100%);
-color: white;
+background-image: linear-gradient(67deg, rgba(0,255,189,1) 0%, rgba(0,122,91,1) 51%, rgba(0,0,0,1) 100%);
+margin: 0;
+background-repeat: no-repeat;
+background-position: center center;
+font-family: 'Raleway', sans-serif;
+font-size: 20px;
 }
 
 a {
@@ -49,18 +51,30 @@ nav li {
 }
 
 .card {
-  display: flex;
+  display: grid;
   justify-content: center;
-
-  flex-shrink: 3;
-  width: 400px;
+  flex:1;
+  flex-direction: row-reverse;
+  min-width: 100vh;
+  margin: 0 auto;
+ 
   padding: 10px;
   box-shadow: 0px 20px 3px lightcyan;
-  margin: 0 auto;
   margin-bottom: 30px;
   background: #94a7c8;
   border-radius: 14px;
 }
+
+.card-body{
+
+display: flex;
+flex-wrap: wrap;
+
+
+
+}
+
+
 
 .ProjectCard h3::after {
   content: url("https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m3/icon-expand.png");
@@ -117,7 +131,7 @@ nav li {
 
 .cards{
 display: flex;
-background-color: lightseagreen;
+background-color: red;
 
 }
 
@@ -151,6 +165,9 @@ align-items: center;
 
 .imagenpri{
 margin-top: 150px;
-
+background-image: url('./images/fondoshopping.webp');
+background-repeat: no-repeat;
+background-size: cover;
+color: black;
 
 }

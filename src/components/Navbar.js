@@ -18,7 +18,7 @@ function Navbar() {
       <Nav className="justify-content-end" activeKey="/home">
 
   <li className="nav-itemm">
-                <a title="logo" href="/"><img className="logo" src="./images/pr3.png" alt="logo" /></a>
+                <a title="logo" href="/"><img className="logo" src="../images/pr3.png" alt="logo" /></a>
                 </li>
 
 
