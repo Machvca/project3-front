@@ -2,8 +2,9 @@ import { Link } from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Button from 'react-bootstrap/Button';
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { addNewFavService } from '../services/product.services';
+import { AuthContext } from './../context/auth.context';
 
 
 
@@ -16,13 +17,13 @@ function ProductCard({ name, type, image, color, price, description, link, _id }
 	const [ inputPrice, setInputPrice ] = useState(price);
 	const [ inputDescription, setInputDescription ] = useState(description);
 	const [ inputLink, setInputLink ] = useState(link);
-	const userId = _id;
-
+	const {user} = useContext(AuthContext);
+	const userId = user._id
 	const handleSubmitFavs = async (e) => {
 		try {
-			const requestBody = { name, type, image, color, price, description, link, _id };
-
-			await addNewFavService(userId, requestBody);
+			const requestBody = { inputName, inputType, inputImage, inputColor, inputPrice, inputDescription, inputLink, _id, userId };
+console.log(requestBody);
+			await addNewFavService(requestBody);
 		} catch (err) {
 			console.log(err);
 		}
