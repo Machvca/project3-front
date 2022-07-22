@@ -30,13 +30,18 @@ const getAllAccesoriesService = () => {
 const getAllHeadphonesService = () => {
 	return service.get(`${URL}/headphones`)};
 
+	//Que se pone dentro del parentesis???
+	//Línea 35 ok?
+	const addNewFavService = (newFav) => {
+	return service.post(`${URL}/add-favorite/`, newFav);
+	};
 
 
 
 
 
 
-export { getAllProductsService,  getAllMonitorsService, getAllMousesService, getAllKeyboardsService, getAllChairsService, getAllMerchService, getAllSnacksService, getAllAccesoriesService, getAllHeadphonesService }
+export { getAllProductsService,  getAllMonitorsService, getAllMousesService, getAllKeyboardsService, getAllChairsService, getAllMerchService, getAllSnacksService, getAllAccesoriesService, getAllHeadphonesService, addNewFavService }
 
 
 

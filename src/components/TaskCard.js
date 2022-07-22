@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 import { updateTaskService, deleteTaskService } from '../services/tasks.services';
 
 function TaskCard({ title, description, _id }) {
