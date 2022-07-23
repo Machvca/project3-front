@@ -32,17 +32,15 @@ const getAllHeadphonesService = () => {
 
 	
 const addNewFavService = (newFav) => {
-	return service.post(`${URL}/add-favorite`, newFav);
-
-	};
-
-
-
+	return service.post(`${URL}/add-favorite`, newFav);};
+// trying to implement favs view
+const getAllFavoritesService = () => {
+	return service.get(`${URL}/favorites`)};
 
 
 
-export { getAllProductsService,  getAllMonitorsService, getAllMousesService, getAllKeyboardsService, getAllChairsService, getAllMerchService, getAllSnacksService, getAllAccesoriesService, getAllHeadphonesService, addNewFavService }
 
 
 
-//services // luego app.js en routes // luego hacer la page//
+export { getAllProductsService,  getAllMonitorsService, getAllMousesService, getAllKeyboardsService, getAllChairsService, getAllMerchService, getAllSnacksService, getAllAccesoriesService, getAllHeadphonesService, addNewFavService, getAllFavoritesService }
+

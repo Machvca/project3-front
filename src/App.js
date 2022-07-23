@@ -16,151 +16,153 @@ import SnacksPage from './pages/SnacksPage';
 import KeyboardsPage from './pages/KeyboardsPage';
 import AccesoriesPage from './pages/AccesoriesPage';
 import HeadphonesPage from './pages/HeadphonesPage';
+import FavoritesPage from './pages/FavoritesPage';
 
 
 function App() {
 	return (
 		<div className="App">
 
-
-
 <Navbar />
 
+	<Routes>
 
-
-			<Routes>
-				<Route exact path="/" element={<HomePage />} />
-
-				<Route
-					exact
-					path="/products"
-					element={
-						<PrivateRoute>
-						<FilteredProductsPage />
-						</PrivateRoute>
-					}
-				/>
-
+			<Route exact path="/" element={<HomePage />} />
 
 			<Route
-					exact
-					path="/products/monitors"
-					element={
+				exact
+				path="/products"
+				element={
 						<PrivateRoute>
-						<MonitorsPage />	
+							<FilteredProductsPage />
 						</PrivateRoute>
 					}
 				/>
 
 			<Route
-					exact
-					path="/products/mouses"
-					element={
+				exact
+				path="/products/monitors"
+				element={
 						<PrivateRoute>
-						<MousesPage />
-							
+							<MonitorsPage />	
 						</PrivateRoute>
 					}
 				/>
 
 			<Route
-					exact
-					path="/products/keyboards"
-					element={
+				exact
+				path="/products/mouses"
+				element={
 						<PrivateRoute>
-						<KeyboardsPage />
-							
+							<MousesPage />	
 						</PrivateRoute>
 					}
 				/>
-			
 
 			<Route
-					exact
-					path="/products/chairs"
-					element={
+				exact
+				path="/products/keyboards"
+				element={
 						<PrivateRoute>
-						<ChairsPage />
-							
+							<KeyboardsPage />
 						</PrivateRoute>
 					}
 				/>
 			
 			<Route
-					exact
-					path="/products/merchandising"
-					element={
+				exact
+				path="/products/chairs"
+				element={
 						<PrivateRoute>
-						<MerchPage />							
+							<ChairsPage />
+						</PrivateRoute>
+					}
+				/>
+			
+			<Route
+				exact
+				path="/products/merchandising"
+				element={
+						<PrivateRoute>
+							<MerchPage />							
 						</PrivateRoute>
 					}
 				/>
 
 			<Route
-					exact
-					path="/products/snacks"
-					element={
+				exact
+				path="/products/snacks"
+				element={
 						<PrivateRoute>
-						<SnacksPage />							
+							<SnacksPage />							
 						</PrivateRoute>
 					}
 				/>
 
-<Route
-					exact
-					path="/products/mouses"
-					element={
+			<Route
+				exact
+				path="/products/mouses"
+				element={
 						<PrivateRoute>
-						<MousesPage />							
+							<MousesPage />							
 						</PrivateRoute>
 					}
 				/>
 
-
-				<Route
-					exact
-					path="/products/accesories"
-					element={
+			<Route
+				exact
+				path="/products/accesories"
+				element={
 						<PrivateRoute>
-						<AccesoriesPage />							
+							<AccesoriesPage />							
 						</PrivateRoute>
 					}
 				/>
 
-<Route
-					exact
-					path="/products/headphones"
-					element={
+			<Route
+				exact
+				path="/products/headphones"
+				element={
 						<PrivateRoute>
-						<HeadphonesPage />							
+							<HeadphonesPage />							
+						</PrivateRoute>
+					}
+				/>
+			
+			<Route
+				exact
+				path="/products/add-favorite"
+				element={
+						<PrivateRoute>
+							<FavoritesPage />							
 						</PrivateRoute>
 					}
 				/>
 
-				<Route
-					exact
-					path="/projects/:id"
-					element={
+			<Route
+				exact
+				path="/projects/:id"
+				element={
 						<PrivateRoute>
-							<ProjectDetailsPage />
+						<ProjectDetailsPage />
 						</PrivateRoute>
 					}
 				/>
 
-				<Route
-					exact
-					path="/signup"
-					element={
+			<Route
+				exact
+				path="/signup"
+				element={
 						<AnonRoute>
 							<SignupPage />
 						</AnonRoute>
 					}
 				/>
 
-				<Route
-					exact
-					path="/login"
-					element={
+			<Route
+				exact
+				path="/login"
+				element={
 						<AnonRoute>
 							<LoginPage />
 						</AnonRoute>
