@@ -31,16 +31,15 @@ console.log(requestBody);
 
 	return (
 
-
 <div className='card-container'>
 
 <div className='image-container'>
-
 <img src={image} alt="img" />
 </div>
+
 <div className='card-content'>
 <div className='card-title'>
-<h4 > {name}</h4>
+<h3 > {name}</h3>
 </div>
 <div className='body-des'>
 <p > {description}</p>
@@ -59,10 +58,9 @@ console.log(requestBody);
 </div>
 
 
-<button>
- <a href={link} className="btn btn-outline-secondary ">BUY ME HERE!!</a>
+<button href={link} className="btn btn-outline-secondary ">BUY ME HERE!!
  </button>
- <button onClick={handleSubmitFavs}>Add to Favs</button>
+ <button className="btn btn-outline-secondary" onClick={handleSubmitFavs}>Add to Favs</button>
 </div>
 
 

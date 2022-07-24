@@ -27,7 +27,7 @@ function SnacksPage() {
 	}, []);
 
 	return (
-		<div className="SnacksListPage">
+		<div className='maindiv'>
 			{/* <AddProject refreshProjects={getAllProjects} /> */}
 
 			{loading && <div>Loading...</div>}

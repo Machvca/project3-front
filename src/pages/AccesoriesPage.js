@@ -27,7 +27,7 @@ function AccesoriesPage() {
 	}, []);
 
 	return (
-		<div className="AccesoriesListPage">
+		<div className='maindiv'>
 			{/* <AddProject refreshProjects={getAllProjects} /> */}
 
 			{loading && <div>Loading...</div>}

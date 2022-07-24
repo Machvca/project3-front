@@ -29,15 +29,14 @@ function MonitorsPage() {
 	return (
 
 
+<div className='maindiv'>
 
 
-
-		
-			<div className='maindiv'>
 
 			{loading && <div>Loading...</div>}
-			 { !loading && monitors?.map((monitor) => <ProductCard key={monitor._id} {...monitor} />  )}  
-		</div>
+		    { !loading && monitors?.map((monitor) => <ProductCard key={monitor._id} {...monitor} />  )}  
+
+</div>
 
 
 

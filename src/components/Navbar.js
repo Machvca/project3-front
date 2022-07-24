@@ -16,11 +16,11 @@ function Navbar() {
     
       
       <Nav className="justify-content-end" activeKey="/home">
-
-  <li className="nav-itemm">
+ <div className="nav-itemm">
+  <li >
                 <a title="logo" href="/"><img className="logo" src={logo} alt="logo" /></a>
                 </li>
-
+</div>
 
     
 -

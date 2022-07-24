@@ -27,7 +27,7 @@ function ChairsPage() {
 	}, []);
 
 	return (
-		<div className="ChairsListPage">
+		<div className='maindiv'>
 			{/* <AddProject refreshProjects={getAllProjects} /> */}
 
 			{loading && <div>Loading...</div>}

@@ -27,7 +27,7 @@ function HeadphonesPage() {
 	}, []);
 
 	return (
-		<div className="HeadphonesListPage">
+		<div className='maindiv'>
 			
 
 			{loading && <div>Loading...</div>}

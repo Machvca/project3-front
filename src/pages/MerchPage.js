@@ -27,7 +27,7 @@ function MerchPage() {
 	}, []);
 
 	return (
-		<div className="MerchListPage">
+		<div className='maindiv'>
 			{/* <AddProject refreshProjects={getAllProjects} /> */}
 
 			{loading && <div>Loading...</div>}

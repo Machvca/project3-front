@@ -1,5 +1,5 @@
 body {
-background-image: linear-gradient(67deg, rgba(0,255,189,1) 0%, rgba(0,122,91,1) 51%, rgba(0,0,0,1) 100%);
+background: linear-gradient(90deg, hsla(148, 89%, 78%, 1) 0%, hsla(210, 81%, 22%, 1) 100%);
 margin: 0;
 background-repeat: no-repeat;
 background-position: center center;
@@ -49,16 +49,6 @@ nav li {
   font-size: 24px;
   font-weight: 600;
 }
-
-.card {
-
-}
-
-
-
-
-
-
 
 
 
@@ -119,7 +109,11 @@ nav li {
 }
 
 
-
+.nav-itemm{
+display: flex;
+align-items: flex-start;
+  justify-content: first baseline;
+}
 
 
 
@@ -179,32 +173,29 @@ color: black;
 margin-top: 100px;
 }
 
-.card-container{
-width: 300px;
-overflow: hidden;
-box-shadow: 0px 0px 15px -5px;
-transition: 0.3s;
-animation: ease-in;
-margin-top: 100px;
-display: flex;
-flex-wrap: wrap;
-}
+
+
+
 
 .card-container:hover{
 transform: scale(1.1);
 box-shadow: 0px 0px 15px 0px;
-background-color: #f9eec3;
+background-color: grey;
+}
+.image-container{
+display: flex;
+align-content: center;
+
+
 }
 
-
 .image-container img{
-overflow: hidden;
-height: 250px;
+width: auto;
+height: 300px;
 
 }
 
 .card-content{
-
   margin: 1rem;
   margin-top: 0.5rem;
 
@@ -217,8 +208,9 @@ padding: 0;
 }
 
 .card-title{
-margin-bottom: 0.5 rem;
+margin-bottom: 1 rem;
 font-weight: bolder;
+font-size: 50px;
 
 }
 
@@ -235,18 +227,45 @@ margin-bottom: 0.5rem;
 } 
 
 .btn button:hover{
-background: rgba(27, 156, 252, 0.1);
+background: lightgray;
 
 }
 
-.maindiv{
-display: flex;
-justify-content: space-around;
-flex-flow: column wrap;
-flex-direction: row-reverse;
-
+.card{
 min-width: 100vw;
 margin: 0 auto;
 
 }
+
+.maindiv{
+display: flex !important;
+justify-content: space-around !important;
+flex-flow: column wrap;
+flex-wrap: wrap;
+flex-direction: row-reverse;
+
+}
+
+
+.card-container{
+background-color: lightgray;
+width: 450px;
+overflow: hidden;
+box-shadow: 0px 0px 15px -5px;
+transition: 0.3s;
+animation: ease-in;
+margin-top: 100px;
+display: flex;
+flex-wrap: wrap;
+border-radius: 10px;
+border: 2px solid grey;
+padding-bottom: 0.1rem;
+box-shadow: 0 15px 50px;
+overflow: hidden;
+padding: 0;
+gap: 0.5rem;
+margin-bottom: 5rem;
+padding: 1rem;
+}
+
 

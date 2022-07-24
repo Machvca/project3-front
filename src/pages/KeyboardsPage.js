@@ -27,7 +27,7 @@ function KeyboardsPage() {
 	}, []);
 
 	return (
-		<div className="KeyboardsListPage">
+		<div className='maindiv'>
 			{/* <AddProject refreshProjects={getAllProjects} /> */}
 
 			{loading && <div>Loading...</div>}
