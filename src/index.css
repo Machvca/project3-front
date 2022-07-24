@@ -1,10 +1,10 @@
 body {
 background: linear-gradient(90deg, hsla(148, 89%, 78%, 1) 0%, hsla(210, 81%, 22%, 1) 100%);
 margin: 0;
-background-repeat: no-repeat;
+background-repeat:repeat;
 background-position: center center;
 font-family: 'Raleway', sans-serif;
-font-size: 20px;
+
 }
 
 a {
@@ -128,14 +128,12 @@ align-items: flex-start;
 }
 
 .containerr{
-display: grid;
-align-items: center;
- grid-template-columns: 70px 70px 70px;
-  grid-gap: 400px;
-  margin-top: 150px;
-  margin-left: 200px;
-
-
+  margin-top: 100px;
+display: flex ;
+justify-content: space-between;
+flex-flow: column wrap;
+flex-wrap: wrap;
+flex-direction: row;
 }
 
 
@@ -266,6 +264,8 @@ padding: 0;
 gap: 0.5rem;
 margin-bottom: 5rem;
 padding: 1rem;
+align-items: center;
+justify-content: center;
 }
 
 
