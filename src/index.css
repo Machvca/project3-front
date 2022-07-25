@@ -349,6 +349,10 @@ justify-content: center;
     justify-content: flex-start;
     flex-direction: row;
     align-items: center; 
+}
 
+.hearts{
+width: 20px;
+height: 20px;
 
 }
