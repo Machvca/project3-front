@@ -34,7 +34,7 @@ function Navbar() {
 
             <button class="btn btn-sm btn-outline-secondary" type="button" onClick={logOutUser}>Log out</button>
 
-            <Link to="/add-favorites"> <button class="btn btn-sm btn-outline-secondary" type="button">{user.name}</button> </Link>
+            <Link to="/products/add-favorite"> <button class="btn btn-sm btn-outline-secondary" type="button">{user.name}</button> </Link>
  
           </>)
          

@@ -17,6 +17,8 @@ import KeyboardsPage from './pages/KeyboardsPage';
 import AccesoriesPage from './pages/AccesoriesPage';
 import HeadphonesPage from './pages/HeadphonesPage';
 import FavoritesPage from './pages/FavoritesPage';
+import Footer from './components/Footer';
+
 
 
 function App() {
@@ -169,6 +171,7 @@ function App() {
 					}
 				/>
 			</Routes>
+			<Footer />
 		</div>
 	);
 }

@@ -5,11 +5,12 @@ import Button from 'react-bootstrap/Button';
 import React, { useState, useContext } from 'react';
 import { addNewFavService } from '../services/product.services';
 import { AuthContext } from './../context/auth.context';
-
+import {deleteFavService} from '../services/product.services'
 
 
 // We are deconstructing props object directly in the parentheses of the function
-function ProductCard({ name, type, image, color, price, description, link, _id }) {
+function ProductCard({ name, type, image, color, price, description, link, _id },setNewFavorites, newFavorites ) {
+
 	const [ inputName, setInputName ] = useState(name);
 	const [ inputType, setInputType ] = useState(type);
 	const [ inputImage, setInputImage ] = useState(image);
@@ -19,6 +20,7 @@ function ProductCard({ name, type, image, color, price, description, link, _id }
 	const [ inputLink, setInputLink ] = useState(link);
 	const {user} = useContext(AuthContext);
 	const userId = user._id
+	
 	const handleSubmitFavs = async (e) => {
 		try {
 			const requestBody = { inputName, inputType, inputImage, inputColor, inputPrice, inputDescription, inputLink, _id, userId };
@@ -28,6 +30,24 @@ console.log(requestBody);
 			console.log(err);
 		}
 	};
+
+
+
+const handleDeleteFavs = async (e) => {
+		try {
+			const requestBody = {  _id, userId };
+console.log(requestBody);
+			await deleteFavService(requestBody);
+			
+		} catch (err) {
+			console.log(err);
+		}
+	};
+
+
+
+
+
 
 	return (
 
@@ -61,6 +81,9 @@ console.log(requestBody);
 <button href={link} className="btn btn-outline-secondary ">BUY ME HERE!!
  </button>
  <button className="btn btn-outline-secondary" onClick={handleSubmitFavs}>Add to Favs</button>
+
+
+ <button className="btn btn-outline-secondary" onClick={handleDeleteFavs}>Delete</button>
 </div>
 
 

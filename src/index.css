@@ -145,7 +145,7 @@ flex-direction: row;
 
 .imagenpri{
 font-family: MintageRegular;
-margin-top: 150px;
+margin-top: 70px;
 background-image: url('./images/fondoshopping.webp');
 background-repeat: repeat;
 background-size: cover;
@@ -245,6 +245,7 @@ margin: 0 auto;
 }
 
 .maindiv{
+  
 display: flex !important;
 justify-content: space-around !important;
 flex-flow: column wrap;
@@ -283,3 +284,50 @@ justify-content: center;
   src: url(./fonts/MintageRegular.ttf);
 }
 
+
+
+.Footer {
+  background-color: white;
+  width: 100%;
+  bottom: 0;
+  padding-bottom: 90px;
+  padding-top: 30px;
+  overflow: hidden;
+ 
+}
+
+.FooterBody {
+  max-width: 850px;
+  margin: 0 auto;
+  display: flex;
+  padding: 30px 24px 0 24px;
+  font-size: 0.875rem;
+align-content: space-between;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+
+
+}
+
+.FooterBody p {
+  color: #a8a8a9;
+  font-family: "Wallie-Skinny", "Roboto", sans-serif;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.FooterBody img {
+  max-width: 180px;
+}
+
+.FooterBody h4 {
+  color: #7a7a7a;
+  font-family: "Wallie", "Roboto", sans-serif;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.FooterColumn {
+  width: 100%;
+}

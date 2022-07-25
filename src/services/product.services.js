@@ -37,10 +37,14 @@ const addNewFavService = (newFav) => {
 const getAllFavoritesService = () => {
 	return service.get(`${URL}/favorites`)};
 
+	const deleteFavService = (deleteFav) => {
+console.log(deleteFav)
+
+	return service.post(`${URL}/deletefavorites`, deleteFav)};
 
 
 
 
 
-export { getAllProductsService,  getAllMonitorsService, getAllMousesService, getAllKeyboardsService, getAllChairsService, getAllMerchService, getAllSnacksService, getAllAccesoriesService, getAllHeadphonesService, addNewFavService, getAllFavoritesService }
+export { getAllProductsService,  getAllMonitorsService, getAllMousesService, getAllKeyboardsService, getAllChairsService, getAllMerchService, getAllSnacksService, getAllAccesoriesService, getAllHeadphonesService, addNewFavService, getAllFavoritesService, deleteFavService }
 

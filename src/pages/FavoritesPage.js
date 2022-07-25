@@ -3,11 +3,10 @@ import ProductCard from '../components/ProductCard';
 import { addNewFavService, getAllFavoritesService } from '../services/product.services';
 
 function FavoritesPage() {
- 
 
 	const [ favorites, setFavorites ] = useState([]);
 	const [ loading, setLoading ] = useState(true);
-
+    const [newFavorites, setNewFavorites] = useState(true);
 	const getAllFavorites = async () => {
 		// Send the token through the request "Authorization" Headers
 		try {
@@ -25,15 +24,17 @@ function FavoritesPage() {
 	// by setting the empty dependency array - []
 	useEffect(() => {
 		getAllFavorites();
-	}, []);
+	}, [newFavorites]);
 
-	return (
+return (
     
-        <div className='maindiv'>
+<div className='maindiv'>
 
-        {loading && <div>Loading...</div>}
-         { !loading && favorites?.map((favorite) => <ProductCard key={favorite._id} {...favorite} />  )}  
-    </div>
+{loading && <div>Loading...</div>}
+
+{ !loading && favorites?.map((favorite) => <ProductCard setNewFavorites ={setNewFavorites} newFavorites = {newFavorites} key={favorite._id} {...favorite} />  )}  
+
+</div>
 
 );
 }
