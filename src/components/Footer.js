@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../images/pr3.png";
+
 
 export default function Footer() {
   return (
@@ -11,7 +11,7 @@ export default function Footer() {
           <p>2022 DEVSTUFF©</p>
         </div>
         <div className="FooterColumn">
-          <h4>DEVSTUFF</h4>
+          <h4 className="devs">DEVSTUFF</h4>
           <p>About Us</p>
           <p>Brand Book</p>
           <p>Press</p>

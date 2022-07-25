@@ -2,9 +2,9 @@ body {
 background: rgb(255,225,62);
 background: linear-gradient(133deg, rgba(255,225,62,1) 0%, rgba(204,189,78,1) 30%, rgba(2,8,0,1) 100%);
 margin: 0;
+
 margin-bottom: 100px;
 background-repeat: no-repeat;
-background-position: center center;
 font-family: 'Raleway', sans-serif;
 background-size:cover !important;
 
@@ -101,25 +101,25 @@ nav li {
 .AddProject form,
 .SignupPage form,
 .LoginPage form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 
 .AddTask button,
 .AddProject button {
-  display: block;
+display: block;
 }
 
 .TaskCard {
-  background-color: #dfeef9;
+background-color: #dfeef9;
 }
 
 
 .nav-itemm{
 display: flex;
 align-items: flex-start;
-  justify-content: first baseline;
+justify-content: first baseline;
 }
 
 
@@ -141,6 +141,7 @@ justify-content: space-between;
 flex-flow: column wrap;
 flex-wrap: wrap;
 flex-direction: row;
+margin-bottom: 700px;
 }
 
 
@@ -153,21 +154,19 @@ flex-direction: row;
 font-family: MintageRegular;
 margin-top: 70px;
 background-image: url('./images/fondoshopping.webp');
+width: 100%;
 background-repeat: repeat;
 background-size: cover;
 text-align: center;
 height: 100%;
 width: 650 px;
 color: wheat
-
-
 }
 
 
 
 h1{
-font-size: 90px;
-
+font-size: 110px;
 }
 
 
@@ -180,17 +179,17 @@ font-size: 90px;
   flex-direction: row-reverse;
   min-width: 100vh;
   margin: 0 auto;
- 
   padding: 10px;
   box-shadow: 0px 20px 3px lightcyan;
   margin-bottom: 30px;
   background: #94a7c8;
   border-radius: 14px;
-
 margin-top: 100px;
 }
 
-
+.devs{
+  color: gray  !important;
+}
 
 
 
@@ -340,4 +339,15 @@ justify-content: center;
 
 .FooterColumn {
   width: 100%;
+}
+
+
+.parrafo{
+
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center; 
+
+
 }
