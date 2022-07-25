@@ -12,8 +12,9 @@ function FavoritesPage() {
 		// Send the token through the request "Authorization" Headers
 		try {
 			const response = await getAllFavoritesService();
-			setFavorites(response.data);
+			setFavorites(response.data[0].favorites);
 			console.log(response.data);
+				console.log(response.data[0].favorites);
 			setLoading(false);
 		} catch (err) {
 			console.log(err);

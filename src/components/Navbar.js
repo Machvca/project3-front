@@ -3,6 +3,7 @@ import { useContext } from "react";                       // <== IMPORT
 import { AuthContext } from "./../context/auth.context";  // <== IMPORT
 import Nav from 'react-bootstrap/Nav';
 import logo from '../images/pr3.png'
+import { Button } from "react-bootstrap";
 
 
 
@@ -30,11 +31,13 @@ function Navbar() {
             <Link to="/products">
               <button class="btn btn-sm btn-outline-secondary" type="button">Products</button>
             </Link>
+
             <button class="btn btn-sm btn-outline-secondary" type="button" onClick={logOutUser}>Log out</button>
-            <span>{user.name}</span>
-            
+
+            <Link to="/add-favorites"> <button class="btn btn-sm btn-outline-secondary" type="button">{user.name}</button> </Link>
+ 
           </>)
-        
+         
         : 
         (<>
        
