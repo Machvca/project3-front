@@ -15,39 +15,47 @@ function Navbar() {
 
   return (
     
-      
-      <Nav className="justify-content-end" activeKey="/home">
- <div className="nav-itemm">
-  <li >
-                <a title="logo" href="/"><img className="logo" src={logo} alt="logo" /></a>
-                </li>
-</div>
 
-    
--
-      {isLoggedIn
-        ? (<>
+<ul class="nav nav-pills nav-fill navcolors">
+  <li class="nav-item">
+    <a title="logo" href="/"><img className="logo" src={logo} alt="logo" /></a>
+  </li>
 
-            <Link to="/products">
-              <button class="btn btn-sm btn-outline-secondary" type="button">Products</button>
-            </Link>
 
-            <button class="btn btn-sm btn-outline-secondary" type="button" onClick={logOutUser}>Log out</button>
 
-            <Link to="/products/add-favorite"> <button class="btn btn-sm btn-outline-secondary" type="button">{user.name}</button> </Link>
- 
-          </>)
-         
-        : 
-        (<>
-       
-          <Link to="/signup"> <button class="btn btn-sm btn-outline-secondary" type="button">Signup</button> </Link>
-          <Link to="/login"> <button class="btn btn-sm btn-outline-secondary" type="button">Login</button> </Link>
+
+{isLoggedIn
+        ? 
+  (<>
+  <li class="nav-item">
+    <a class="nav-link" href="/products">Products</a>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link"  onClick={logOutUser}>Log out</a>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link" href="/products/add-favorite">My Profile</a>
+  </li>
+  </>)
+
+: 
+(<>
+
+<li class="nav-item">
+    <a class="nav-link" href="/signup">Signup</a>
+  </li>
+
+<li class="nav-item">
+    <a class="nav-link" href="/login">Login</a>
+  </li>
           
-        </>)
+  </>)
       }
 
-    </Nav>
+    </ul>
+    
   );
 }
 

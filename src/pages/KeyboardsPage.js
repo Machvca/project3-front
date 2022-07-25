@@ -30,7 +30,7 @@ function KeyboardsPage() {
 		<div className='maindiv'>
 			{/* <AddProject refreshProjects={getAllProjects} /> */}
 
-			{loading && <div>Loading...</div>}
+			{loading && <div><span class="loader"></span></div>}
 			 { !loading && keyboards?.map((keyboard) => <ProductCard key={keyboard._id} {...keyboard} />  )}  
 		</div>
 	);

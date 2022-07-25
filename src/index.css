@@ -2,7 +2,6 @@ body {
 background: rgb(255,225,62);
 background: linear-gradient(133deg, rgba(255,225,62,1) 0%, rgba(204,189,78,1) 30%, rgba(2,8,0,1) 100%);
 margin: 0;
-
 margin-bottom: 100px;
 background-repeat: no-repeat;
 font-family: 'Raleway', sans-serif;
@@ -135,7 +134,7 @@ align-items: flex-start;
 }
 
 .containerr{
-  margin-top: 100px;
+margin-top: 100px;
 display: flex ;
 justify-content: space-between;
 flex-flow: column wrap;
@@ -321,7 +320,7 @@ justify-content: center;
 }
 
 .FooterBody p {
-  color: #a8a8a9;
+  color: c;
   font-family: "Wallie-Skinny", "Roboto", sans-serif;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -354,5 +353,12 @@ justify-content: center;
 .hearts{
 width: 20px;
 height: 20px;
+
+}
+
+.navcolors{
+ color: whitesmoke !important;
+  font-family: "Wallie", "Roboto", sans-serif !important;
+
 
 }

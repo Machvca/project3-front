@@ -30,7 +30,7 @@ return (
     
 <div className='maindiv'>
 
-{loading && <div>Loading...</div>}
+{loading && <div><span class="loader"></span></div>}
 
 { !loading && favorites?.map((favorite) => <ProductCard setNewFavorites ={setNewFavorites} newFavorites = {newFavorites} key={favorite._id} {...favorite} />  )}  
 

@@ -30,7 +30,7 @@ function SnacksPage() {
 		<div className='maindiv'>
 			{/* <AddProject refreshProjects={getAllProjects} /> */}
 
-			{loading && <div>Loading...</div>}
+			{loading && <div><span class="loader"></span></div>}
 			 { !loading && snacks?.map((snack) => <ProductCard key={snack._id} {...snack} />  )}  
 		</div>
 	);
