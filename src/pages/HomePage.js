@@ -42,8 +42,8 @@ function HomePage() {
     <br></br>
     <br></br>
     <br></br>
-    <br></br>
       <p>In this page you will find the best products for a developer. Sign Up, its free :) !</p>
+    <br></br>
       
     </div>
   )
