@@ -38,7 +38,9 @@ const handleDeleteFavs = async (e) => {
 			const requestBody = {  _id, userId };
 console.log(requestBody);
 			await deleteFavService(requestBody);
-			
+		
+window.location.reload()
+
 		} catch (err) {
 			console.log(err);
 		}

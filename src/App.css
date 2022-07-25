@@ -1,6 +1,4 @@
-.App {
- 
-}
+
 
 .App-logo {
   height: 40vmin;
@@ -25,7 +23,8 @@
 }
 
 .App-link {
-  color: red;
+  color: grey
+   ;
 }
 
 @keyframes App-logo-spin {
@@ -44,11 +43,3 @@ width: 100px;
 
 
 }
-
-.imagenpri{
-text-align: center;
-height: 100%;
-width: 650 px;
-color: wheat
-
-} 
