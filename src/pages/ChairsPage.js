@@ -31,7 +31,7 @@ function ChairsPage() {
 			{/* <AddProject refreshProjects={getAllProjects} /> */}
 
 			{loading && <div>Loading...</div>}
-			 { !loading && chairs?.map((chair) => <ProductCard key={chair._id} {...chair} />  )}  
+{ !loading && chairs?.map((chair) => <ProductCard key={chair._id} {...chair} />  )}  
 		</div>
 	);
 }
