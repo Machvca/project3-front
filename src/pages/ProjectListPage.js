@@ -29,7 +29,7 @@ function ProjectListPage() {
 		<div className="ProjectListPage">
 			<AddProject refreshProjects={getAllProjects} />
 
-			{loading && <div>Loading...</div>}
+			{loading && <span class="loader"></span>}
 			 { !loading && projects?.map((project) => <ProjectCard key={project._id} {...project} />  )}  
 		</div>
 	);

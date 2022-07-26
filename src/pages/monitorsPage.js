@@ -33,7 +33,7 @@ function MonitorsPage() {
 
 
 
-			{loading && <div><span class="loader"></span></div>}
+			{loading && <span class="loader"></span>}
 		    { !loading && monitors?.map((monitor) => <ProductCard key={monitor._id} {...monitor} />  )}  
 
 </div>

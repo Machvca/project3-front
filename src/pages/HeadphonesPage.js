@@ -30,7 +30,7 @@ function HeadphonesPage() {
 		<div className='maindiv'>
 			
 
-			{loading && <div><span class="loader"></span></div>}
+			{loading && <span class="loader"></span>}
 			 { !loading && headphones?.map((headphone) => <ProductCard key={headphone._id} {...headphone} />  )}  
 		</div>
 	);

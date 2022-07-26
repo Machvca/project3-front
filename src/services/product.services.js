@@ -42,10 +42,14 @@ console.log(deleteFav)
 
 	return service.post(`${URL}/deletefavorites`, deleteFav)};
 
+
+
+	
 const addProductService = (addNewProduct) => {
 console.log(addNewProduct)
 
-	return service.post(`${URL}/add-product`, addNewProduct)};
+	return service.post(`${URL}/create`, addNewProduct)
+};
 
 
 

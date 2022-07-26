@@ -30,7 +30,7 @@ function MousesPage() {
 		<div className="maindiv">
 			{/* <AddProject refreshProjects={getAllProjects} /> */}
 
-			{loading && <div><span class="loader"></span></div>}
+			{loading && <span class="loader"></span>}
 			 { !loading && mouses?.map((mouse) => <ProductCard key={mouse._id} {...mouse} />  )}  
 		</div>
 	);

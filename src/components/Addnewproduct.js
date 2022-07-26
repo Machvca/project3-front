@@ -1,8 +1,8 @@
 import { useState, useContext } from "react";
 import axios from "axios";
 import { AuthContext } from "./../context/auth.context";
+import {addProductService} from "./../services/product.services"
 const API_URI = process.env.REACT_APP_API_URI;
-import addProductService from "./../services/product.services"
 
 
 function AddProduct(props) {
@@ -22,7 +22,7 @@ function AddProduct(props) {
 
 
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
 
@@ -35,25 +35,23 @@ function AddProduct(props) {
     const storedToken = localStorage.getItem("authToken");
 
     // Send the token through the request "Authorization" Headers
-    axios
-      .post(`${API_URI}/api/projects`, requestBody, {
-        headers: { Authorization: `Bearer ${storedToken}` }
-      })
-      .then((response) => {
-        // Reset the state
-        setName("");
+
+
+  try {
+			await addProductService(requestBody);
+			// Reset the state to clear the inputs
+			  setName("");
         setType("");
         setImage("");
         setColor("");
         setPrice("");
         setDescription("");
         setLink("");
-        
-
-// props.refreshProjects();
-
-      })
-      .catch((error) => console.log(error));
+			
+		} catch (err) {
+			console.log(err);
+    }
+ 
   };
 
   return (

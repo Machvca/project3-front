@@ -30,7 +30,7 @@ function ChairsPage() {
 		<div className='maindiv'>
 			{/* <AddProject refreshProjects={getAllProjects} /> */}
 
-			{loading && <div>Loading...</div>}
+			{loading && <span class="loader"></span>}
 { !loading && chairs?.map((chair) => <ProductCard key={chair._id} {...chair} />  )}  
 		</div>
 	);

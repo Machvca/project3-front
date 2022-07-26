@@ -30,7 +30,7 @@ function MerchPage() {
 		<div className='maindiv'>
 			{/* <AddProject refreshProjects={getAllProjects} /> */}
 
-			{loading && <div><span class="loader"></span></div>}
+			{loading && <span class="loader"></span>}
 			 { !loading && merchandising?.map((merch) => <ProductCard key={merch._id} {...merch} />  )}  
 		</div>
 	);

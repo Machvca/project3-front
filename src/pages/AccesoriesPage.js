@@ -30,7 +30,7 @@ function AccesoriesPage() {
 		<div className='maindiv'>
 			{/* <AddProject refreshProjects={getAllProjects} /> */}
 
-			{loading && <div>Loading...</div>}
+			{loading && <span class="loader"></span>}
 			 { !loading && accesories?.map((accesorie) => <ProductCard key={accesorie._id} {...accesorie} />  )}  
 		</div>
 	);
