@@ -30,12 +30,10 @@ function SnacksPage() {
 		<div className='maindiv'>
 			{/* <AddProject refreshProjects={getAllProjects} /> */}
 
-			{loading && <div><span class="loader"></span></div>}
+			{loading && <span class="loader"></span>}
 			 { !loading && snacks?.map((snack) => <ProductCard key={snack._id} {...snack} />  )}  
 		</div>
 	);
 }
-
-
 
 export default SnacksPage;
