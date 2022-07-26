@@ -19,6 +19,7 @@ import HeadphonesPage from './pages/HeadphonesPage';
 import FavoritesPage from './pages/FavoritesPage';
 import Footer from './components/Footer';
 import Searchbar from './components/Searchbar';
+import AddProduct from './components/Addnewproduct';
 
 
 
@@ -150,6 +151,19 @@ function App() {
 						</PrivateRoute>
 					}
 				/>
+
+	<Route
+				exact
+				path="/products/add-product"
+				element={
+						<PrivateRoute>
+							<AddProduct />							
+						</PrivateRoute>
+					}
+				/>
+
+
+
 
 			<Route
 				exact

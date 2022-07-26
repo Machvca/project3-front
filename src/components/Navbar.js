@@ -31,6 +31,15 @@ function Navbar() {
     <a class="nav-link" href="/products">Products</a>
   </li>
 
+
+  <li class="nav-item">
+    <a class="nav-link" href="/products/add-product">Add Product</a>
+  </li>
+
+
+
+
+
   <li class="nav-item">
     <a class="nav-link"  onClick={logOutUser}>Log out</a>
   </li>
