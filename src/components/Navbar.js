@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useContext } from "react";                       // <== IMPORT 
 import { AuthContext } from "./../context/auth.context";  // <== IMPORT
 import Nav from 'react-bootstrap/Nav';
-import logo from '../images/pr3.png'
+import logo from '../images/devstuff.png'
 import { Button } from "react-bootstrap";
 
 
@@ -18,7 +18,7 @@ function Navbar() {
 
 <ul class="nav nav-pills nav-fill navcolors">
   <li class="nav-item">
-    <a title="logo" href="/"><img className="logo" src={logo} alt="logo" /></a>
+    <a title="logo" href="/"><img className="logo" src={logo} alt="logo"/></a>
   </li>
 
 

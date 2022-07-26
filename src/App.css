@@ -96,5 +96,25 @@ width: 100px;
       opacity: 1;
     }
   }
-      
-      
+
+.logo{
+  width: 150px;
+}
+
+.mainpic{
+  width: 100%;
+}
+
+.container{
+
+  margin-top: 100px;
+}
+
+.btn-group{
+  display: flex;
+  flex: content;
+}
+
+.imagenpri{
+  margin-top: 4px;
+}

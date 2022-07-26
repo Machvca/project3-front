@@ -1,4 +1,4 @@
-body {
+/* body {
 background: rgb(255,225,62);
 background: linear-gradient(133deg, rgba(255,225,62,1) 0%, rgba(204,189,78,1) 30%, rgba(2,8,0,1) 100%);
 margin: 0;
@@ -6,11 +6,19 @@ margin-bottom: 100px;
 background-repeat: no-repeat;
 font-family: 'Raleway', sans-serif;
 background-size:cover !important;
+} */
 
-}
-
-
-
+/* Yo iria con una escala de colores neutra para el fondo de toda la app, para que no parezcamos 
+un poweranger. Algo asi o + suaves */
+body {
+  background: #a9a8a2;
+  margin: 0;
+  margin-bottom: 100px;
+  background-repeat: no-repeat;
+  font-family: 'Raleway', sans-serif;
+  background-size:cover !important;
+  opacity: 0.7;
+  }
 
 
 a {
@@ -150,7 +158,7 @@ margin-bottom: 700px;
   width: 200px;
 }
 
-.imagenpri{
+/* .imagenpri{
 font-family: MintageRegular;
 margin-top: 70px;
 background-image: url('./images/fondoshopping.webp');
@@ -161,7 +169,7 @@ text-align: center;
 height: 100%;
 width: 650 px;
 color: wheat
-}
+} */
 
 
 
@@ -296,12 +304,13 @@ justify-content: center;
 
 
 .Footer {
-  
   width: 100%;
   bottom: 0;
   padding-bottom: 90px;
   padding-top: 30px;
   overflow: hidden;
+  background-color: white;
+  margin-top: 80px;
  
 }
 
@@ -320,7 +329,7 @@ justify-content: center;
 }
 
 .FooterBody p {
-  color: c;
+  
   font-family: "Wallie-Skinny", "Roboto", sans-serif;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -331,10 +340,14 @@ justify-content: center;
 }
 
 .FooterBody h4 {
-  color: #7a7a7a;
+  color: #5bb29a;
   font-family: "Wallie", "Roboto", sans-serif;
   margin-top: 0;
   margin-bottom: 10px;
+}
+
+.devs {
+  color: #5bb29a;
 }
 
 .FooterColumn {
@@ -359,6 +372,5 @@ height: 20px;
 .navcolors{
  color: whitesmoke !important;
   font-family: "Wallie", "Roboto", sans-serif !important;
-
 
 }

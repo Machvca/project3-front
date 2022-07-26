@@ -18,6 +18,7 @@ import AccesoriesPage from './pages/AccesoriesPage';
 import HeadphonesPage from './pages/HeadphonesPage';
 import FavoritesPage from './pages/FavoritesPage';
 import Footer from './components/Footer';
+import Searchbar from './components/Searchbar';
 
 
 
@@ -46,6 +47,7 @@ function App() {
 				path="/products/monitors"
 				element={
 						<PrivateRoute>
+							<Searchbar />
 							<MonitorsPage />	
 						</PrivateRoute>
 					}
@@ -56,6 +58,7 @@ function App() {
 				path="/products/mouses"
 				element={
 						<PrivateRoute>
+							<Searchbar />
 							<MousesPage />	
 						</PrivateRoute>
 					}
@@ -66,6 +69,7 @@ function App() {
 				path="/products/keyboards"
 				element={
 						<PrivateRoute>
+							<Searchbar />
 							<KeyboardsPage />
 						</PrivateRoute>
 					}
@@ -76,6 +80,7 @@ function App() {
 				path="/products/chairs"
 				element={
 						<PrivateRoute>
+							<Searchbar />
 							<ChairsPage />
 						</PrivateRoute>
 					}
@@ -86,6 +91,7 @@ function App() {
 				path="/products/merchandising"
 				element={
 						<PrivateRoute>
+							<Searchbar />
 							<MerchPage />							
 						</PrivateRoute>
 					}
@@ -96,6 +102,7 @@ function App() {
 				path="/products/snacks"
 				element={
 						<PrivateRoute>
+							<Searchbar />
 							<SnacksPage />							
 						</PrivateRoute>
 					}
@@ -106,6 +113,7 @@ function App() {
 				path="/products/mouses"
 				element={
 						<PrivateRoute>
+							<Searchbar />
 							<MousesPage />							
 						</PrivateRoute>
 					}
@@ -116,6 +124,7 @@ function App() {
 				path="/products/accesories"
 				element={
 						<PrivateRoute>
+							<Searchbar />
 							<AccesoriesPage />							
 						</PrivateRoute>
 					}
@@ -126,6 +135,7 @@ function App() {
 				path="/products/headphones"
 				element={
 						<PrivateRoute>
+							<Searchbar />
 							<HeadphonesPage />							
 						</PrivateRoute>
 					}
