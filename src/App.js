@@ -167,10 +167,10 @@ function App() {
 
 			<Route
 				exact
-				path="/projects/:id"
+				path="/products/:id"
 				element={
 						<PrivateRoute>
-						<ProjectDetailsPage />
+						
 						</PrivateRoute>
 					}
 				/>

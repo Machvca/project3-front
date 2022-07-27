@@ -103,6 +103,8 @@ width: 100px;
 
 .mainpic{
   width: 100%;
+  border-top: 5px solid #000;
+  border-bottom: 5px solid #000;
 }
 
 .container{
@@ -116,5 +118,5 @@ width: 100px;
 }
 
 .imagenpri{
-  margin-top: 4px;
+  margin-top: 0px;
 }
