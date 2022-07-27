@@ -120,3 +120,7 @@ width: 100px;
 .imagenpri{
   margin-top: 0px;
 }
+
+.card-group{
+  display: flex;
+}
