@@ -53,10 +53,10 @@ console.log(addNewProduct)
 
 
 
-const getAllProductsById = () => {
-	return service.get(`${URL}/:id`)};
+const getOneProductById = (id) => {
+	return service.get(`${URL}/${id}`)};
 
 
 
-export { getAllProductsService,  getAllMonitorsService, getAllMousesService, getAllKeyboardsService, getAllChairsService, getAllMerchService, getAllSnacksService, getAllAccesoriesService, getAllHeadphonesService, addNewFavService, getAllFavoritesService, deleteFavService, addProductService, getAllProductsById }
+export { getAllProductsService,  getAllMonitorsService, getAllMousesService, getAllKeyboardsService, getAllChairsService, getAllMerchService, getAllSnacksService, getAllAccesoriesService, getAllHeadphonesService, addNewFavService, getAllFavoritesService, deleteFavService, addProductService, getOneProductById }
 
