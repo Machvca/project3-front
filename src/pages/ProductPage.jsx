@@ -18,8 +18,8 @@ const ImgContainer = styled.div`
 `;
 
 const Image = styled.img`
-  width: 100%;
-  height: 70vh;
+  width: 40vh;
+  height: 40vh;
   object-fit: cover;
 `;
 

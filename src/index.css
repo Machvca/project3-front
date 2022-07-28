@@ -141,16 +141,26 @@ align-items: flex-start;
 
 }
 
-.containerr{
-margin-top: 100px;
-display: flex ;
-justify-content: space-between;
-flex-flow: column wrap;
-flex-wrap: wrap;
-flex-direction: row;
-margin-bottom: 700px;
-
+.links__container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:2rem;
+  padding: 6rem;
+  justify-content: center;
+  text-decoration: none !important;
 }
+
+.links__container a{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: auto 0;
+  gap:1rem;
+  width: 150px;
+}
+
+
 
 
 .logohome{
