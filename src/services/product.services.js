@@ -9,6 +9,12 @@ const getAllProductsService = () => {
 const getAllMonitorsService = () => {
 	return service.get(`${URL}/monitors`)};
 
+const getProductService = (id) => {
+	return service.get(`${URL}/find/`+id)};
+
+
+
+
 const getAllMousesService = () => {
 	return service.get(`${URL}/mouses`)};
 
@@ -59,5 +65,12 @@ const getOneProductById = (id) => {
 const getOneProductByIdd = (id) => {
 	return service.get(`${URL}/find/${id}`)};
 
-export { getAllProductsService,  getAllMonitorsService, getAllMousesService, getAllKeyboardsService, getAllChairsService, getAllMerchService, getAllSnacksService, getAllAccesoriesService, getAllHeadphonesService, addNewFavService, getAllFavoritesService, deleteFavService, addProductService, getOneProductById, getOneProductByIdd }
+
+
+
+
+
+
+
+export { getAllProductsService,  getAllMonitorsService, getAllMousesService, getAllKeyboardsService, getAllChairsService, getAllMerchService, getAllSnacksService, getAllAccesoriesService, getAllHeadphonesService, addNewFavService, getAllFavoritesService, deleteFavService, addProductService, getOneProductById, getOneProductByIdd, getProductService }
 

@@ -20,6 +20,7 @@ import FavoritesPage from './pages/FavoritesPage';
 import Footer from './components/Footer';
 import Searchbar from './components/Searchbar';
 import AddProduct from './components/Addnewproduct';
+import ProductPage from './pages/ProductPage';
 
 
 
@@ -42,6 +43,20 @@ function App() {
 						</PrivateRoute>
 					}
 				/>
+
+
+<Route
+				exact
+				path="/product/:id"
+				element={
+						<PrivateRoute>
+							<ProductPage/>
+						</PrivateRoute>
+					} 
+				/>
+
+
+
 
 			<Route
 				exact
