@@ -18,6 +18,7 @@ body {
   font-family: 'Raleway', sans-serif;
   background-size:cover !important;
   opacity: 0.7;
+  text-decoration: none !important;
   }
 
 
@@ -147,7 +148,11 @@ align-items: flex-start;
   gap:2rem;
   padding: 6rem;
   justify-content: center;
-  text-decoration: none !important;
+  text-decoration: none !important
+  
+  
+  
+     ;
 }
 
 .links__container a{

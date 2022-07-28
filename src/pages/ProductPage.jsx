@@ -9,7 +9,7 @@ import { getProductService } from "../services/product.services";
 const Container = styled.div``;
 
 const Wrapper = styled.div`
-  padding: 50px;
+  padding: 100px;
   display: flex;
 `;
 
@@ -18,8 +18,8 @@ const ImgContainer = styled.div`
 `;
 
 const Image = styled.img`
-  width: 40vh;
-  height: 40vh;
+  width: 450px;
+  height: 450px;
   object-fit: cover;
 `;
 
