@@ -8,7 +8,7 @@ import LoginPage from './pages/LoginPage';
 import PrivateRoute from './components/PrivateRoute'; 
 import AnonRoute from './components/AnonRoute'; 
 import FilteredProductsPage from './pages/Filterproductspage.jsx'
-import MonitorsPage from './pages/MonitorsPage';
+import MonitorsPage from './pages/MonitorsPages';
 import MousesPage from './pages/MousesPage';
 import ChairsPage from './pages/ChairsPage';
 import MerchPage from './pages/MerchPage';
